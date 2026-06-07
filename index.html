@@ -1098,6 +1098,95 @@ footer a:hover { color: var(--paper); }
 @media (max-width: 700px) {
   .feat[style*="span 2"] { grid-column: span 1 !important; }
 }
+
+/* ════════════════════════════════════════
+   MOBILE OVERRIDES (max-width: 480px)
+   ════════════════════════════════════════ */
+@media (max-width: 480px) {
+
+  /* ─ Hero ─ */
+  .hero { padding: 48px 0 64px !important; text-align: center !important; }
+  .hero h1 { font-size: clamp(26px, 7.5vw, 36px) !important; line-height: 1.6 !important; }
+  .hero .lede { font-size: 14px !important; line-height: 1.9 !important; }
+  .hero-meta { grid-template-columns: repeat(3,1fr) !important; gap: 8px !important; margin-top: 36px !important; }
+  .hero-meta .v { font-size: 12px !important; }
+  .hero-meta .k { font-size: 9px !important; }
+
+  /* ─ Concept WHY (2枚目) ─ */
+  #concept > .container > div {
+    grid-template-columns: 1fr !important;
+    gap: 28px !important;
+  }
+  #concept .section-title { font-size: clamp(22px, 6vw, 30px) !important; }
+  #concept p { font-size: 14px !important; }
+  /* カードのフォントをスマホ用に縮小 */
+  #concept div[style*="font-size:22px"] { font-size: 17px !important; }
+  #concept div[style*="padding:40px 36px"] { padding: 24px 20px !important; }
+
+  /* ─ Flagship Course (3枚目) ─ */
+  .flagship { padding: 64px 0 !important; }
+  .flagship-grid { grid-template-columns: 1fr !important; gap: 32px !important; }
+  .section-title { font-size: clamp(22px, 6vw, 32px) !important; }
+  .points-grid { grid-template-columns: 1fr !important; gap: 16px !important; }
+  .point { padding: 24px 20px !important; }
+  .point h4 { font-size: 17px !important; }
+  .point p { font-size: 13px !important; }
+
+  /* ─ Platform (4枚目) ─ */
+  .platform { padding: 64px 0 !important; }
+  .feats { grid-template-columns: 1fr !important; gap: 16px !important; }
+  .feat { padding: 22px 18px !important; gap: 14px !important; }
+  .feat h4 { font-size: 15px !important; }
+  .feat p { font-size: 13px !important; }
+  /* Zoom・講師カードのspan2 */
+  .feat[style*="span 2"] { grid-column: span 1 !important; }
+
+  /* ─ Compare (5枚目) ─ */
+  .compare-wrap { overflow-x: auto !important; -webkit-overflow-scrolling: touch; }
+  .compare-table { min-width: 560px !important; font-size: 12px !important; }
+  .compare-table th, .compare-table td { padding: 10px 10px !important; font-size: 11px !important; }
+
+  /* ─ Pricing (6枚目) ─ */
+  .pricing { padding: 64px 0 !important; }
+  .kanri-plans ul { grid-template-columns: 1fr !important; gap: 16px !important; }
+  .kanri-plans .pp { padding: 24px 20px !important; }
+  .kanri-plans h4 { font-size: 18px !important; }
+  .kanri-plans .pb { font-size: 22px !important; }
+
+  /* ─ Kanri sub course (7枚目) ─ */
+  .kanri { padding: 64px 0 !important; }
+  .kanri-grid { grid-template-columns: 1fr !important; gap: 32px !important; }
+  .kanri-points li { padding: 14px 0 !important; font-size: 14px !important; }
+
+  /* ─ Which Course (8枚目) ─ */
+  #which-course { padding: 64px 0 !important; }
+  #which-course > .container > div:nth-child(2) {
+    grid-template-columns: 1fr !important;
+    gap: 24px !important;
+  }
+  #which-course h2 { font-size: clamp(22px, 6vw, 32px) !important; }
+  #which-course div[style*="padding:36px 28px"] { padding: 28px 20px !important; }
+  #which-course div[style*="font-size:15px"] { font-size: 14px !important; }
+  #which-course div[style*="font-size:16px"] { font-size: 14px !important; }
+
+  /* ─ FAQ (9枚目) ─ */
+  .faq { padding: 64px 0 !important; }
+  .faq-q { padding: 18px 16px !important; font-size: 14px !important; }
+  .faq-a { padding: 0 16px 18px !important; font-size: 13px !important; }
+
+  /* ─ Final CTA ─ */
+  .cta { padding: 64px 0 !important; }
+  .cta-title { font-size: clamp(24px, 7vw, 36px) !important; }
+  .cta .lede { font-size: 14px !important; }
+
+  /* ─ Float CTA ─ */
+  .float-cta { font-size: 14px !important; padding: 16px 20px !important; left: 16px !important; right: 16px !important; }
+
+  /* ─ 全体余白 ─ */
+  .container { padding: 0 18px !important; }
+  .section-title { font-size: clamp(22px, 6vw, 32px) !important; }
+  .eyebrow { font-size: 10px !important; }
+}
 </style>
 </head>
 <body>
@@ -1450,7 +1539,7 @@ footer a:hover { color: var(--paper); }
       <h2 class="section-title">並べてみると、違いは明確。</h2>
     </div>
     <div class="compare-table-wrap">
-      <table class="compare-table">
+      <div class="compare-wrap"><table class="compare-table">
         <thead>
           <tr>
             <th></th>
@@ -1485,7 +1574,7 @@ footer a:hover { color: var(--paper); }
             <td>全員に合わせる</td>
           </tr>
         </tbody>
-      </table>
+      </table></div>
     </div>
   </div>
 </section>
