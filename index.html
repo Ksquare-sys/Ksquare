@@ -412,6 +412,41 @@ footer a:hover{color:var(--paper);}
 .hero-cta-note{font-size:12px;color:var(--ink-3);margin-top:14px;letter-spacing:.02em;}
 @media(max-width:900px){.hero-gifts{grid-template-columns:1fr;gap:18px;max-width:460px;}.solve-consult{padding:26px 22px;}.solve-consult h3{font-size:19px;}}
 @media(max-width:560px){.hero-pain h2{font-size:23px;}.pain-item p{font-size:15px;}.hero-concl h1{font-size:18px;}.hero-concl h1 .l2{white-space:nowrap;}.solve-sub .ss1{white-space:nowrap;font-size:12.5px;}.solve-sub .ss2{font-size:18px;display:inline-block;margin-top:6px;}.hero-cta-note{white-space:nowrap;font-size:9.5px;}#analysisEyebrow{white-space:nowrap;font-size:9.5px;letter-spacing:.12em;}#analysisEyebrow::before{width:18px;}}
+
+/* ===== TARGET BANNER ===== */
+.target-banner{background:var(--paper-2);padding:44px 0 8px;}
+.target-banner .founder-target{margin-bottom:0;}
+
+/* ===== FOUNDER PROFILE ===== */
+.founder{background:var(--paper-2);border-bottom:1px solid var(--line);padding-top:36px;}
+.founder-target{text-align:center;font-family:var(--serif);font-size:clamp(24px,3.6vw,40px);font-weight:700;color:var(--navy-900);line-height:1.5;margin-bottom:48px;letter-spacing:.01em;text-wrap:pretty;}
+.founder-target .u{background:linear-gradient(transparent 60%,rgba(216,76,64,.26) 0);padding:0 3px;color:var(--vermilion);}
+.founder-grid{display:grid;grid-template-columns:380px 1fr;gap:48px;align-items:start;max-width:1040px;margin:0 auto;}
+.founder-card{background:#fff;border:1px solid var(--line);border-radius:16px;overflow:hidden;box-shadow:0 16px 40px rgba(11,36,71,.1);}
+.founder-photo{position:relative;aspect-ratio:4/5;background:linear-gradient(160deg,#102d5c,#081628);display:flex;align-items:center;justify-content:center;overflow:hidden;}
+.founder-photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;}
+.founder-photo .ph{display:flex;flex-direction:column;align-items:center;gap:12px;color:rgba(255,255,255,.5);font-size:13px;letter-spacing:.08em;z-index:0;}
+.founder-photo .ph svg{width:54px;height:54px;opacity:.55;}
+.founder-cardbody{padding:34px 34px 34px;border-top:4px solid var(--vermilion);}
+.founder-role{font-family:var(--mono);font-size:13px;letter-spacing:.18em;color:var(--vermilion);font-weight:700;margin-bottom:9px;}
+.founder-name{font-family:var(--serif);font-size:30px;font-weight:700;color:var(--navy-900);line-height:1.2;margin-bottom:3px;}
+.founder-name .yomi{font-size:13px;color:var(--ink-3);font-weight:400;letter-spacing:.06em;margin-left:9px;font-family:var(--sans);}
+.founder-facts{margin-top:20px;display:flex;flex-direction:column;gap:0;}
+.founder-facts li{display:flex;gap:11px;align-items:baseline;font-size:15px;line-height:1.7;color:var(--ink-2);padding:12px 0;border-top:1px solid var(--line-2);}
+.founder-facts li::before{content:"";flex:0 0 6px;width:6px;height:6px;border-radius:50%;background:var(--line);margin-top:8px;}
+.founder-facts li.hot{color:var(--navy-900);font-weight:700;}
+.founder-facts li.hot::before{background:var(--vermilion);}
+.founder-facts .hl{font-family:var(--serif);font-size:17px;color:var(--vermilion);font-weight:700;}
+.founder-facts .hl-navy{font-family:var(--serif);font-size:17px;color:var(--navy-900);font-weight:700;}
+.founder-msg .eyebrow{display:inline-flex;}
+.founder-msg h3{font-family:var(--serif);font-size:clamp(20px,2.6vw,28px);line-height:1.55;color:var(--navy-900);font-weight:700;margin-bottom:22px;text-wrap:pretty;}
+.founder-msg h3 .accent{color:var(--vermilion);}
+.founder-msg p{font-size:15px;line-height:2.05;color:var(--ink-2);margin-bottom:16px;text-wrap:pretty;}
+.founder-msg p:last-child{margin-bottom:0;}
+.founder-msg p strong{color:var(--navy-900);font-weight:700;}
+.founder-msg .quote{border-left:3px solid var(--vermilion);padding:4px 0 4px 18px;font-family:var(--serif);color:var(--navy-900);font-weight:500;font-size:15.5px;line-height:1.9;margin:20px 0;}
+@media(max-width:900px){.founder-grid{grid-template-columns:1fr;gap:28px;max-width:480px;}.founder-card{max-width:380px;margin:0 auto;}}
+@media(max-width:560px){.founder-target{font-size:22px;}.founder-msg h3{font-size:20px;}.founder-msg p{font-size:14.5px;}}
 .mobile-panel.open{display:flex;}
 </style>
 
@@ -462,6 +497,41 @@ footer a:hover{color:var(--paper);}
   
 </header>
 
+<!-- TARGET BANNER -->
+<section class="target-banner">
+  <div class="container">
+    <p class="founder-target">地方から<span class="u">難関大・国公立大学</span>を<br class="sp-br">目指す皆さんへ</p>
+  </div>
+</section>
+
+<!-- FOUNDER PROFILE -->
+<section class="sec founder" id="founder">
+  <div class="container">
+    <div class="founder-grid">
+      <div class="founder-card">
+        <div class="founder-cardbody">
+          <div class="founder-role">代表 · PROFILE</div>
+          <div class="founder-name">長嶺 圭杜<span class="yomi">ながみね けいと</span></div>
+          <ul class="founder-facts">
+            <li>宮崎日本大学中学校 卒業</li>
+            <li>宮崎日本大学高等学校 卒業</li>
+            <li class="hot"><span class="hl-navy">大阪大学</span> 基礎工学部 情報科学科 在学</li>
+            <li class="hot"><span class="hl">慶應義塾大学・早稲田大学 合格</span></li>
+            <li>塾講師歴 3年</li>
+          </ul>
+        </div>
+      </div>
+      <div class="founder-msg">
+        <div class="eyebrow">MESSAGE · 代表メッセージ</div>
+        <h3>地方からでも、正しい戦略があれば<br class="sp-br"><span class="accent">都会の受験生に一歩も引けを取らない。</span></h3>
+        <p>大阪大学に進学後、塾講師として3年間、多くの受験生を指導してきました。そこで痛感したのは、都市部と地元・宮崎とでは、出会える<strong>「指導の質」</strong>に大きな差があるということです。</p>
+        <p class="quote">「行き詰まった時、実力ある講師に『即質問・即日解決』できる環境がない」「志望校の対策を個別に指導してくれる環境が近くにない」――。</p>
+        <p>そんな自分が受験生の頃に心の底から欲しかった<strong>「圧倒的な指導力にいつでも頼れる最高の学習環境」</strong>を実現したのが、Ksquareです。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- HERO -->
 <section class="hero" id="top">
 
@@ -475,7 +545,7 @@ footer a:hover{color:var(--paper);}
     </div>
   </div>
 
-  <!-- 2. 悩みのあぶり出し -->
+<!-- 2. 悩みのあぶり出し -->
   <div class="hero-pain">
     <div class="container" style="max-width:900px;">
       <div class="plabel">CHECK — こんな悩み、ありませんか</div>
